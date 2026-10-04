@@ -1,0 +1,550 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday My Love ❤️</title>
+
+<link rel="stylesheet"
+      href="{% static 'birthday/style.css' %}">
+
+<style>
+
+    /* =========================
+       BIRTHDAY PAGE
+    ========================= */
+
+    .birthday-page {
+        justify-content: flex-start;
+        padding-top: 55px;
+        padding-bottom: 70px;
+    }
+
+
+    .birthday-icon {
+        font-size: 65px;
+
+        margin-top: 5px;
+        margin-bottom: 10px;
+
+        animation: gentleFloat 3s ease-in-out infinite;
+    }
+
+
+    .birthday-message {
+        max-width: 600px;
+
+        margin-top: 25px;
+
+        color: #d9c4ca;
+
+        font-size: 14px;
+
+        line-height: 1.9;
+    }
+
+
+    .birthday-wish {
+        max-width: 560px;
+
+        margin-top: 25px;
+
+        padding: 22px 28px;
+
+        border-left:
+            1px solid rgba(217, 130, 154, 0.5);
+
+        border-right:
+            1px solid rgba(217, 130, 154, 0.5);
+
+        color: #f1b8c6;
+
+        font-family: 'Cormorant Garamond', serif;
+
+        font-size: 22px;
+
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       QUESTION SECTION
+    ========================= */
+
+    .question-section {
+
+        margin-top: 60px;
+
+        padding-top: 35px;
+
+        width: 100%;
+
+        max-width: 650px;
+
+        border-top:
+            1px solid rgba(255,255,255,0.12);
+    }
+
+
+    .question-small {
+
+        text-transform: uppercase;
+
+        letter-spacing: 4px;
+
+        font-size: 10px;
+
+        color: #e8b8c4;
+    }
+
+
+    .question-section h3 {
+
+        margin-top: 15px;
+
+        font-family: 'Cormorant Garamond', serif;
+
+        font-size: 38px;
+
+        font-weight: 500;
+
+        color: #f5c5d0;
+    }
+
+
+    .question-text {
+
+        margin-top: 12px;
+
+        color: #d9c4ca;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+
+    /* =========================
+       ANSWER BUTTONS
+    ========================= */
+
+    .answer-buttons {
+
+        position: relative;
+
+        width: min(90%, 500px);
+
+        height: 100px;
+
+        margin: 25px auto 0;
+
+        display: flex;
+
+        justify-content: center;
+
+        align-items: center;
+
+        gap: 18px;
+    }
+
+
+    .love-button,
+    .no-button {
+
+        padding: 14px 25px;
+
+        border-radius: 40px;
+
+        border:
+            1px solid rgba(255,255,255,0.2);
+
+        font-family: 'Montserrat', sans-serif;
+
+        font-size: 13px;
+
+        cursor: pointer;
+
+        transition: 0.3s ease;
+    }
+
+
+    .love-button {
+
+        background:
+            rgba(217, 130, 154, 0.85);
+
+        color: white;
+
+        box-shadow:
+            0 10px 30px rgba(210, 80, 120, 0.25);
+    }
+
+
+    .love-button:hover {
+
+        transform: scale(1.06);
+    }
+
+
+    .no-button {
+
+        background:
+            rgba(255,255,255,0.08);
+
+        color: #d9c4ca;
+
+        position: relative;
+    }
+
+
+    /* =========================
+       FINAL MESSAGE
+    ========================= */
+
+    .final-message {
+
+        display: none;
+
+        margin-top: 25px;
+
+        animation: fadeUp 1s ease;
+    }
+
+
+    .final-message h3 {
+
+        font-family: 'Cormorant Garamond', serif;
+
+        font-size: 40px;
+
+        font-weight: 500;
+
+        color: #f5c5d0;
+    }
+
+
+    .final-message p {
+
+        margin-top: 12px;
+
+        font-size: 13px;
+
+        line-height: 1.8;
+
+        color: #d9c4ca;
+    }
+
+
+    /* =========================
+       BIRTHDAY ANIMATION
+    ========================= */
+
+    @keyframes gentleFloat {
+
+        0%, 100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-8px);
+        }
+
+    }
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- FLOATING HEARTS -->
+
+<div class="hearts">
+
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+
+</div>
+
+
+<!-- =========================
+     BIRTHDAY PAGE
+========================= -->
+
+<main class="hero birthday-page">
+
+
+    <!-- INTRO -->
+
+    <div class="small-text">
+
+        TODAY IS A LITTLE MORE SPECIAL
+
+    </div>
+
+
+    <!-- CAKE -->
+
+    <div class="birthday-icon">
+
+        🎂
+
+    </div>
+
+
+    <!-- TITLE -->
+
+    <h1>
+
+        Happy Birthday
+
+    </h1>
+
+
+    <div class="heart-line">
+
+        ───── ❤️ ─────
+
+    </div>
+
+
+    <h2>
+
+        My Love
+
+    </h2>
+
+
+    <!-- BIRTHDAY MESSAGE -->
+
+    <p class="birthday-message">
+
+        Today is not just another day.
+
+        <br><br>
+
+        It's the day the person who means
+        so much to me came into this world.
+
+        <br><br>
+
+        And I'm so grateful that
+        our paths crossed. ❤️
+
+    </p>
+
+
+    <!-- BIRTHDAY WISH -->
+
+    <div class="birthday-wish">
+
+        May your smile stay bright,
+        your heart stay happy,
+        and may we create many more
+        beautiful memories together.
+
+    </div>
+
+
+    <!-- =========================
+         ONE LAST QUESTION
+    ========================= -->
+
+    <section class="question-section">
+
+
+        <div class="question-small">
+
+            ONE LAST LITTLE QUESTION
+
+        </div>
+
+
+        <h3>
+
+            Do you love me too? ❤️
+
+        </h3>
+
+
+        <p class="question-text">
+
+            After everything we've shared,
+            all the laughs, memories and little moments...
+
+            <br>
+
+            I just want to know one thing.
+
+        </p>
+
+
+        <!-- ANSWER BUTTONS -->
+
+        <div class="answer-buttons">
+
+
+            <button
+                class="love-button"
+                onclick="sayYes()">
+
+                I Love You Too ❤️
+
+            </button>
+
+
+            <button
+                class="no-button"
+                id="noButton"
+                onmouseover="moveNo()"
+                onclick="moveNo()">
+
+                No
+
+            </button>
+
+
+        </div>
+
+
+        <!-- FINAL MESSAGE -->
+
+        <div
+            class="final-message"
+            id="finalMessage">
+
+
+            <h3>
+
+                I knew it. ❤️
+
+            </h3>
+
+
+            <p>
+
+                And that's all I ever wanted to hear.
+
+                <br><br>
+
+                Happy Birthday, my love. 🎂
+
+                <br>
+
+                Here's to us, our memories,
+                and all the beautiful moments
+                still waiting for us. ❤️
+
+            </p>
+
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- =========================
+     JAVASCRIPT
+========================= -->
+
+<script>
+
+
+    /* =========================
+       YES BUTTON
+    ========================= */
+
+    function sayYes() {
+
+        document
+            .getElementById("finalMessage")
+            .style.display = "block";
+
+
+        document
+            .querySelector(".answer-buttons")
+            .style.display = "none";
+
+
+        document
+            .querySelector(".question-text")
+            .style.display = "none";
+
+    }
+
+
+    /* =========================
+       MOVING NO BUTTON
+    ========================= */
+
+    function moveNo() {
+
+        const button =
+            document.getElementById("noButton");
+
+
+        const container =
+            document.querySelector(".answer-buttons");
+
+
+        const maxX =
+            container.clientWidth -
+            button.offsetWidth;
+
+
+        const maxY =
+            container.clientHeight -
+            button.offsetHeight;
+
+
+        const randomX =
+            Math.random() * maxX -
+            (maxX / 2);
+
+
+        const randomY =
+            Math.random() * maxY -
+            (maxY / 2);
+
+
+        button.style.position = "absolute";
+
+
+        button.style.left = "50%";
+
+        button.style.top = "50%";
+
+
+        button.style.transform =
+            `translate(
+                calc(-50% + ${randomX}px),
+                calc(-50% + ${randomY}px)
+            )`;
+
+    }
+
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PRUDHVIRAMYA ❤️</title>
+
+    <link rel="stylesheet"
+          href="{% static 'birthday/style.css' %}">
+</head>
+
+<body>
+
+    <div class="hearts">
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+        <span>♥</span>
+        <span>♡</span>
+    </div>
+
+    <main class="hero">
+
+        <div class="small-text">
+            A little something made with love
+        </div>
+
+        <h1>
+            PRUDHVIRAMYA
+        </h1>
+
+        <div class="heart-line">
+            ───── ❤️ ─────
+        </div>
+
+        <h2>
+            For the man<br>
+            who owns my heart
+        </h2>
+
+        <p class="intro">
+            I wanted to give you something different this year...
+            something made especially for you.
+        </p>
+
+        <button class="surprise-btn"
+                onclick="openSurprise()">
+
+            💌 &nbsp; Open My Heart &nbsp; ✨
+
+        </button>
+
+        <p class="hint">
+            There is a little surprise waiting for you...
+        </p>
+
+    </main>
+
+
+    <div id="surprise" class="surprise">
+
+        <div class="surprise-box">
+
+            <div class="close"
+                 onclick="closeSurprise()">
+                ×
+            </div>
+
+            <div class="envelope">
+                💌
+            </div>
+
+            <h2>
+                You found it ❤️
+            </h2>
+
+            <p>
+                Before you see everything I made for you,
+                I want you to know one thing...
+            </p>
+
+            <p class="special">
+                You are one of the most beautiful
+                parts of my life.
+            </p>
+
+            <a href="/story/"
+               class="surprise-btn"
+               style="display:inline-block;text-decoration:none;margin-top:30px;">
+
+                Continue My Surprise ✨
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <script>
+
+        function openSurprise() {
+            document
+                .getElementById("surprise")
+                .classList.add("show");
+        }
+
+        function closeSurprise() {
+            document
+                .getElementById("surprise")
+                .classList.remove("show");
+        }
+
+    </script>
+
+</body>
+
+</html>
